@@ -1,0 +1,632 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --color-text: rgb(0, 59, 74);
+    --color-contrast: rgb(191, 12, 240);
+    --color-contrast-clar: rgb(229, 225, 254);
+    --color-gris-textos: rgb(158, 157, 171);
+}
+
+/* TIPOGRAFIA */
+
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--color-text);
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--color-text);
+}
+
+.hero {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+article h2 {
+    font-size: 1.45rem;
+}
+
+p {
+    line-height: 1.48;
+}
+
+form input {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+.proteccio-dades,
+label:last-of-type {
+    font-size: 0.75rem;
+}
+
+.proteccio-dades a {
+    color: var(--color-contrast);
+}
+
+label[for="checkbox"] {
+}
+
+button,
+.button {
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+figcaption {
+    font-size: 0.65rem;
+    text-align: right;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.termes-legals a {
+    font-size: 0.9rem;
+}
+
+/* Estils especifics per blog.html */
+
+.blog-title {
+    font-family: "Noto Serif", serif;
+    font-size: 2.3rem;
+}
+
+article a.tag {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+.author-date {
+    font-size: 0.9rem;
+    color: var(--color-gris-textos);
+}
+
+.post-content h3 {
+    font-family: "Noto Serif", serif;
+    font-size: 1.75rem;
+}
+
+.post-content p {
+    margin-top: 0.6em;
+}
+
+article a.read-more {
+    text-decoration: dotted;
+    text-underline-offset: 0.3em;
+    color: var(--color-contrast);
+}
+
+.paginacio a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* Estils especifics per entrada.html */
+
+ul.breadcrumb li a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.post-header h1 {
+    font-family: "Noto Serif", serif;
+    font-size: 2.2rem;
+}
+
+p.post-intro {
+    font-size: 1.5rem;
+}
+
+article ol li,
+article ul li {
+    margin-left: 1em;
+}
+
+article blockquote {
+    border-left: 2px solid var(--color-contrast);
+    padding-left: 1em;
+}
+
+article cite {
+    display: block;
+    margin-top: 1em;
+    font-size: 0.9rem;
+}
+
+/* LAYOUT */
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: white;
+}
+
+header img {
+    margin: 0.5em;
+    width: 68%;
+}
+
+header ul {
+    display: flex;
+    width: 37%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style-type: none;
+    padding: 0 1em;
+}
+
+header ul li:nth-child(2) {
+    border-left: 1px solid black;
+}
+
+.hero {
+    background-image: url(/img/hero-image-home.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5.5em 0.5em 6.1em 0.5em;
+}
+
+h2 {
+    margin: 1.35em 0 0.85em 0;
+}
+
+.container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+p {
+    margin-top: 1em;
+}
+
+form {
+    margin-top: 1.3em;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-contrast-clar);
+    border-radius: 5px;
+    margin: 0.8em 0 1em 0;
+    padding: 0.35em 0.5em;
+}
+
+.proteccio-dades a {
+    text-decoration-style: dotted;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    display: inline;
+    margin-top: 1.5em;
+}
+
+label {
+}
+
+button,
+.button {
+    display: block;
+    background-color: var(--color-text);
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1em;
+}
+
+.blog-posts {
+    background-color: var(--color-contrast-clar);
+    margin-top: 4em;
+    padding-bottom: 8em;
+}
+
+.blog-posts img {
+    width: 100%;
+    margin-top: 3.5em;
+}
+
+figcaption {
+}
+
+.blog-posts article {
+}
+
+.blog-posts article h2 {
+    margin: 0;
+}
+
+.blog-posts article a.button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+footer {
+    background-color: var(--color-text);
+    padding: 2.5em 0;
+}
+
+footer img.logo {
+    width: 22%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer a {
+    display: block;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.termes-legals a {
+    margin-top: 0.5em;
+}
+
+/* Estils especifics per blog.html */
+
+main {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.blog-title {
+    margin-top: 1.4em;
+}
+
+.posts article {
+    background-color: white;
+    margin-top: 1.8em;
+    position: relative;
+}
+
+.posts article figure img {
+    width: 100%;
+}
+
+.posts article a.tag {
+    position: absolute;
+    margin: 1em 0 0 0.6em;
+    padding: 0.6em;
+
+    background-color: var(--color-text);
+}
+
+.posts article figure figcaption {
+    position: absolute;
+    right: 2.6em;
+    margin: -3em 0;
+    padding: 0.4em;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.posts article .read-more {
+    display: block;
+    margin-top: 1em;
+}
+
+.post-content {
+    width: 93%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.paginacio {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.2em;
+    margin-bottom: 8em;
+}
+
+.paginacio a {
+    display: block;
+    border: 1px solid var(--color-text);
+    margin: 0 0.5em;
+    padding: 0.5em;
+}
+
+.paginacio .current-page {
+    background-color: var(--color-contrast);
+    border-color: var(--color-contrast);
+    color: white;
+}
+
+/* Estils especifics per entrada.html */
+
+ul.breadcrumb {
+    list-style-type: none;
+    display: flex;
+    margin: 2em 0 1em 0;
+}
+
+ul.breadcrumb li:not(:last-child)::after {
+    content: " > ";
+    margin-right: 0.2em;
+}
+
+article {
+    background-color: white;
+    padding: 1em;
+}
+
+.post-header {
+    background-color: var(--color-contrast-clar);
+    padding-bottom: 1em;
+}
+
+.post-header img {
+    width: 100%;
+}
+
+.post-header h1,
+.post-header p {
+    padding: 0 0.8rem;
+}
+
+.recent-articles {
+    margin-top: 1em;
+}
+
+.recent-articles article {
+    padding: 0;
+}
+
+.recent-articles h3 {
+    margin-bottom: 1em;
+}
+
+.recent-articles figure a {
+    position: absolute;
+    background-color: var(--color-text);
+    margin: 0.8em 0 0 0.8em;
+    padding: 0.4em;
+}
+
+.recent-articles img {
+    width: 100%;
+}
+
+.categories-links {
+    margin-top: 1em;
+}
+
+.categories-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.categories-links ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    display: block;
+    border: 1px solid var(--color-text);
+    margin: 0.5em 1em 3em 0;
+    background-color: white;
+    padding: 0.2em;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media only screen and (min-width: 650px) {
+    header ul {
+        width: 20%;
+    }
+
+    .hero {
+        padding: 6.5em 0.5em 7em 0.5em;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .blog-posts article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog-posts article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .blog-posts article figure {
+        width: 30%;
+        transform: rotate(-5deg);
+        margin-right: 2em;
+    }
+
+    .blog-posts article:nth-child(even) figure {
+        transform: rotate(5deg);
+        margin-right: 0;
+        margin-left: 2em;
+    }
+
+    .blog-posts article figure img {
+        margin-top: 1.5em;
+    }
+
+    .blog-posts article div {
+        /* margin-left: 2.5em; */
+        padding-top: 1em;
+        width: 70%;
+    }
+
+    /* Estils especifics per blog.html */
+
+    .posts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .posts article {
+        max-width: 375px;
+    }
+
+    /* Estils especifics per entrada.html */
+
+    .recent-articles div:first-of-type {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    header {
+        width: 95%;
+        margin: 0 auto;
+    }
+    header ul {
+        width: 10%;
+    }
+
+    .hero div {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .hero div h1 {
+        font-size: 4.5rem;
+        width: 70%;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .mission-newsletter {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+    }
+
+    .newsletter {
+        margin-top: 7em;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 4em;
+    }
+    footer img.logo {
+        width: 40%;
+        margin: 0;
+    }
+
+    .social-media {
+        justify-content: flex-end;
+    }
+
+    .termes-legals {
+        margin-top: 1em;
+        display: flex;
+    }
+
+    .termes-legals a {
+        margin: 0;
+    }
+
+    .termes-legals a:nth-child(2) {
+        margin: 0 1em;
+        padding: 0 1em;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+
+    /* Estils especifics per blog.html */
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 40px;
+    }
+
+    .posts article {
+        max-width: 100%;
+    }
+
+    .posts article:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    /* Estils especifics per entrada.html */
+    main.blog-entry {
+        width: 70%;
+        margin-bottom: 5em;
+    }
+    .flex-container {
+        display: flex;
+        gap: 40px;
+        position: relative;
+    }
+
+    ul.breadcrumbs {
+        position: absolute;
+        flex-basis: 100%;
+        border: 1px solid red;
+    }
+
+    .recent-articles div:first-of-type {
+        flex-direction: column;
+    }
+
+    .categories-links ul {
+        flex-wrap: wrap;
+    }
+    .categories-links ul li a{
+        margin-bottom: 0.2em;
+    }
+}
